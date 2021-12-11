@@ -7,6 +7,8 @@ public class Player {
 
     public Player(int stamina) {
         this.stamina = stamina;
+        if(Player.countPlayers < 6)
+            Player.countPlayers += 1;
     }
 
     public static void subPlayer() {
