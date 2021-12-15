@@ -1,5 +1,4 @@
 package day12.task5;
-import day12.task5.MusicBand;
 
 public class Task5 {
     public static void main(String[] args) {
