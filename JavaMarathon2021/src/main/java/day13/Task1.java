@@ -27,10 +27,10 @@ public class Task1 {
         u1.sendMessage(u3, "сам как?");
         sleep(10);
 
-        u1.sendMessage(u3, "у меня еще лучше");
+        u3.sendMessage(u1, "у меня еще лучше");
         sleep(10);
 
-        u3.sendMessage(u1, "ну вот и славно");
+        u1.sendMessage(u3, "ну вот и славно");
         sleep(10);
 
         MessageDatabase.showDialog(u1, u3);
