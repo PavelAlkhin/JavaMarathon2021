@@ -37,11 +37,7 @@ public class MessageDatabase {
 
         mainMes.addAll(mesU2U1);
 
-        Collections.sort(mainMes, new Comparator<Message>() {
-            public int compare(Message m1, Message m2) {
-                return Long.compare(m1.getDate().getTime(), m2.getDate().getTime());
-            }
-        });
+        Collections.sort(mainMes, Comparator.comparingLong(m -> m.getDate().getTime()));
 
         for (Message m: mainMes) {
             System.out.println(String.format("%s: %s", m.getSender().getUsername(), m.getText()));
